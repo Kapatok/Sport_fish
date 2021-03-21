@@ -117,7 +117,18 @@ h1 {
         position: absolute;
         top: 20px;
         width: 300px;
+        height: 750px;
     }
+}
+
+.wrapper2 {
+    border: 1px solid;
+    height: 720px;
+    width: 600px;
+    position: absolute;
+    left: 350px;
+    top: 0px;
+    border-radius: 10px 10px;
 }
 
 //Поле Регистрации #Modal............................
