@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: url(/JPG/Fon_body.jpg);
+    background-repeat: round;
+    height: 1000px;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    text-align: left;
+    font-size: 50px;
+    top: 20px;
+}
+
+.badge {
+    background-color: #6c757d!important;
+    text-align: end;
+    font-size: calc(1.375rem + 1.5vw);
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    display: inline-block;
+    padding: .35em .65em;
+    font-size: .75em;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+}
+
+.wrapper {
+    .laib {
+        height: 140px;
+        position: absolute;
+        top: 7px;
+        left: 380px;
+        border: 1px solid;
+        border-color: #A49B33;
+        border-radius: 10px 10px;
+    }
+    .btnflip {
+        position: absolute;
+        top: 5%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        width: 200px;
+        height: 60px;
+        text-align: center;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+        transform-origin: center;
+    }
+    .btnflip-item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 80%;
+        text-align: center;
+        line-height: 50px;
+        font-size: 15px;
+        background-color: rgba(255, 255, 255, .05);
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        border-radius: 30px;
+        text-transform: uppercase;
+        color: rgb(82, 170, 211);
+        transition: 1s;
+    }
+    .btnflip-item.btnflip__front {
+        transform: rotateX(0deg) translateZ(20px);
+    }
+    .btnflip:hover .btnflip-item.btnflip__front {
+        transform: rotateX(-180deg) translateZ(20px);
+    }
+    .btnflip-item.btnflip__back {
+        transform: rotateX(180deg) translateZ(20px);
+    }
+    .btnflip:hover .btnflip-item.btnflip__back {
+        transform: rotateX(0deg) translateZ(20px);
+    }
+    .btnflip-item.btnflip__center {
+        background: linear-gradient(to left, #2853af, #7129bd);
+    }
+    .btnflip-item.btnflip__center::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to left, #2853af, #7129bd);
+        border-radius: 30px;
+        transform: translateZ(-1px);
+    }
+    .btnflip:hover .btnflip-item.btnflip__center {
+        transform: rotateX(-180deg);
+    }
+}
+
+.wapper1 {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    border: 1px solid;
+    height: 800px;
+    width: 1000px;
+    border-radius: 15px 15px;
+    .child {
+        position: absolute;
+        top: 20px;
+        width: 300px;
+    }
+}
+
+//Поле Регистрации #Modal............................
+#modal {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: rgb(49, 177, 177);
+    text-align: justify;
+    background-repeat: round;
+    display: none;
+}
+
+.fonstatik {
+    width: 500px;
+    height: 600px;
+    background: url(https://img4.goodfon.ru/original/7084x4723/b/68/peizazh-rassvet-solntse-presnovodnaia-rybalka-udochki-czech.jpg);
+    border: 2px solid;
+    border-radius: 56px 66px 66px 56px;
+    background-repeat: round;
+    display: grid;
+    top: 100px;
+    left: 400px;
+    position: absolute;
+}
+
+#modal:target {
+    display: block;
+}
+
+.crec {
+    background-color: brown;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.crec:hover {
+    background-color: rgb(209, 192, 97);
+    border-radius: 10px 10px 10px 10px;
+    left: 50;
+    transition: all 1s;
+}
+
+h4,
+.crec {
+    text-align: center;
+    padding: 13px;
+}
+
+input {
+    border: 2px solid;
+    border-radius: 10px 10px 10px 10px;
+    margin: 10px;
+}
+
+.inter {
+    display: contents;
+}
+
+form {
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    margin: 8px;
+}
+
+.fedy {
+    background-repeat: round;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #A49B33;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:valid {
+    border: 1px solid green;
+}
